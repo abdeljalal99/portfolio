@@ -1,0 +1,27 @@
+:root {
+  /* Color palette from Coolors */
+  --color-oxford-blue-dark: #000814;
+  --color-oxford-blue: #001d3d;
+  --color-prussian-blue: #003566;
+  --color-amber: #ffc300;
+  --color-yellow: #ffd60a;
+
+  /* Semantic color variables */
+  --color-primary: var(--color-oxford-blue);
+  --color-secondary: var(--color-prussian-blue);
+  --color-accent: var(--color-amber);
+  --color-background: var(--color-oxford-blue-dark);
+  --color-text: var(--color-yellow);
+  --color-text-inverse: var(--color-oxford-blue-dark);
+}
+
+/* Dark theme overrides (optional) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: var(--color-prussian-blue);
+    --color-secondary: var(--color-oxford-blue);
+    --color-background: var(--color-oxford-blue-dark);
+    --color-text: var(--color-yellow);
+    --color-text-inverse: var(--color-yellow);
+  }
+} 
